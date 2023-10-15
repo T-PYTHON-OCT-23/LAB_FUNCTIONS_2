@@ -1,0 +1,20 @@
+
+number1:int = int(input("enter lower number :"))
+number2:int = int(input("enter upper number :"))
+
+
+
+def find_primes (lower:int , upper:int ):
+    list= []
+    for num in range(lower, upper):
+        for num2 in range(2,num):
+            if num%num2 ==0:
+                break
+        else:
+          list.append(num)
+               
+    return list
+
+
+prime_list = find_primes(number1 , number2)
+print(prime_list)

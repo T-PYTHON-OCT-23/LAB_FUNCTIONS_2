@@ -1,0 +1,24 @@
+
+
+
+def modifi_string(words:str):
+    isinstance(words,str)
+    space=" "
+    for word in words:
+       if word.isupper() :
+          space=space+" " +word.lower()  
+       else:
+          space=space+word
+        
+    return space
+
+
+word2= input("write ")
+ss:str = str(modifi_string(word2))
+print(ss)
+#res = isinstance(s2,str)
+#str(res)
+
+
+
+
