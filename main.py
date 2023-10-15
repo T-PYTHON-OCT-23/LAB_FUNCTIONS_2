@@ -10,9 +10,9 @@ def isPrime(n):
 def findprime():
     findprimes = int(input("Enter the first number: "))
     find2primes = int(input("Enter the second number: "))
-    for i in range(findprimes, find2primes + 1):
+    for i in range(findprimes, find2primes):
         if isPrime(i):
-            print(i, end=' ')
+                print(i, end=' ')
             
         
 def camlecase(sentence):
@@ -22,6 +22,6 @@ def camlecase(sentence):
                 sentence = sentence.replace(i, " " + i.lower())
         return sentence
 
-
+findprime()
 print(camlecase("helloWorldThere"))
     
