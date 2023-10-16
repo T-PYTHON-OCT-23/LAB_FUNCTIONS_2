@@ -1,18 +1,11 @@
-def find_primes (num1:int , num2:int) ->int:
-     
-      for i in range (num1 , num2):
-         if i >1:
-             for j in range(2,i):
-                if (j % i) == 0:
-                    break 
-             else:
-                res= f"{i} "
-      return res    
+def find_primes( number1:int , number2:int):
+    for i in range(number1, number2+1):  # two loops bc we have 2 numbers
 
-num1 = 25
-num2 = 50
+        #to check if it's a prime or not
+        for j in range (2, i):
+            if i%j ==0:
+                break
+        else: 
+            print(f"{i} is prime number.")
 
-result:int= find_primes(num1 , num2)
-print= (f"The primes are: {result}")
-
-
+find_primes(25,50)
